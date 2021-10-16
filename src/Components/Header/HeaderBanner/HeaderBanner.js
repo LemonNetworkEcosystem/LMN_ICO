@@ -350,7 +350,7 @@ const HeaderBanner = ({ quantity, setQuantity }) => {
 
                     <li className="order-sm-0">
                       <a
-                        href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+                        href="https://firebasestorage.googleapis.com/v0/b/lemon-network.appspot.com/o/ICO%2FLMN%20Whitepaper.pdf?alt=media"
                         className="link link-xs link-light"
                         target="_blank"
                         download

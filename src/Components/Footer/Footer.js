@@ -160,7 +160,7 @@ const Footer = () => {
               <ul className="footer-links">
                 <li>
                   <a
-                    href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+                    href="https://firebasestorage.googleapis.com/v0/b/lemon-network.appspot.com/o/ICO%2FLMN%20Whitepaper.pdf?alt=media"
                     className="link link-xs link-DARK"
                     target="_blank"
                     download
