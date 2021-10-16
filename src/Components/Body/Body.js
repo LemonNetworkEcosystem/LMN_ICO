@@ -20,9 +20,9 @@ const Body = () => {
       <section className="section py-0 ov-h">
         <OurPartners />
       </section>
-      <section className="section py-0 ov-h">
+      {/* <section className="section py-0 ov-h">
         <Video />
-      </section>
+      </section> */}
       <section className="section bg-white pb-0 pt-5 mt-5" id="roadmap">
         <RoadMap />
       </section>
