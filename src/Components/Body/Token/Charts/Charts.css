@@ -1,0 +1,12 @@
+.apexcharts-legend {
+  display: none !important;
+}
+
+.apexcharts-pie g text {
+  display: none;
+}
+
+.apexcharts-tooltip-series-group.apexcharts-active {
+  background-color: green !important ;
+}
+

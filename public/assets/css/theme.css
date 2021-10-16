@@ -1,0 +1,138 @@
+.menu-btns li a {
+  font-size: 13px;
+  color: #0ab30a;
+  font-weight: 500;
+}
+
+.menu-btns li a {
+  border: 1px solid #0ab30a;
+}
+
+.menu-btns li a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.menu-btns li a {
+  border: none;
+}
+
+.header-banner-span-round-one {
+  background-color: #34ce34;
+  border: none;
+  padding: 10px 1px;
+}
+
+.gradient-banner-btn {
+  border: none;
+  background-image: linear-gradient(45deg, yellow, #0ab30a);
+}
+
+.feature-text > h5,
+.feature-text > p {
+  color: #41d041;
+}
+
+.stage-info > h6 {
+  color: #15dc24;
+}
+
+.bg-#0ab30a {
+  background-color: #15dc23;
+}
+.feature-icon-2 .icon {
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-background {
+  background-image: linear-gradient(90deg, #a0e80c 30%, #15dc24 70%);
+}
+
+.btn-green {
+  background-color: #15dc24;
+  border: none;
+  color: white;
+}
+.background-shade {
+  background-color: #0ab30a;
+}
+
+.white-p {
+  color: white !important;
+}
+
+.nk-footer {
+  background-image: linear-gradient(#1fff1f 5%, #0d310d 20%);
+}
+
+.countdown-s3 {
+  align-items: center;
+  font-weight: 800;
+}
+
+.countdown-s3 div {
+  display: flex;
+  flex-direction: column;
+  font-weight: 200;
+}
+
+.countdown-s3 div span {
+  font-size: 50px;
+  color: #0ab30a;
+}
+@media (max-width: 425px) {
+  .countdown-s3 {
+    align-items: center;
+  }
+  .countdown-s3 div span {
+    font-size: 32px;
+    width: 70px;
+  }
+  .order-sm-0 .link.link-xs.link-light span {
+    width: 21vw !important;
+  }
+}
+
+.btn-new-small {
+  min-width: 71px;
+  max-width: 85%;
+}
+.buy-logo-img.focus {
+  box-shadow: 0 0 0 0.2em #888;
+  border-radius: 5px;
+  background-color: #6cca1c36;
+}
+
+.partner-logo-s3 a img {
+  max-height: 60px;
+}
+
+.css-yk16xz-control {
+  background-color: hsl(206deg 64% 98%) !important;
+  border: none;
+  border-color: hsl(0deg 0% 100%) !important;
+  padding: 10px 4px !important;
+  border-radius: 50rem !important;
+}
+.css-yk16xz-control:focus {
+  border-radius: 50rem !important;
+}
+
+.modal-header {
+  border-bottom: 0 !important;
+}
+.modal-footer {
+  border-top: 0 !important;
+}
+
+.modal-body {
+  border-radius: 40px;
+}
+
+@media (min-width: 1500px) {
+  .order-sm-0 .link.link-xs.link-light span {
+    width: 4vw !important;
+  }
+}
