@@ -35,13 +35,16 @@ const OurTeam = () => {
                 </span>
                 <ul className="team-social team-social-s2">
                   <li>
-                    <a href="#">
+                    <a
+                      href="https://www.linkedin.com/in/eneko-nicolas-1b39711b6/"
+                      target="_blank"
+                    >
                       <em className="fab fa-linkedin-in"></em>
                     </a>
                   </li>
 
                   <li>
-                    <a href="#">
+                    <a href="https://twitter.com/EnekoNicolas" target="_blank">
                       <em className="fab fa-twitter"></em>
                     </a>
                   </li>
