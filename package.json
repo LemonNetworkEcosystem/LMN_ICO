@@ -42,7 +42,7 @@
     "web-vitals": "^1.1.2",
     "web3": "1.2.6"
   },
-  "homepage": "http://Lemondroid.github.io/LMN_ICO",
+  "homepage": "https://lemonnetwork.sale",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
