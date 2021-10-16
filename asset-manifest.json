@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/LMN_ICO/static/css/main.916cf1cb.chunk.css",
-    "main.js": "/LMN_ICO/static/js/main.c79bcba9.chunk.js",
-    "main.js.map": "/LMN_ICO/static/js/main.c79bcba9.chunk.js.map",
+    "main.js": "/LMN_ICO/static/js/main.bb15d5eb.chunk.js",
+    "main.js.map": "/LMN_ICO/static/js/main.bb15d5eb.chunk.js.map",
     "runtime-main.js": "/LMN_ICO/static/js/runtime-main.6f1ac846.js",
     "runtime-main.js.map": "/LMN_ICO/static/js/runtime-main.6f1ac846.js.map",
     "static/css/2.b1dc9f5a.chunk.css": "/LMN_ICO/static/css/2.b1dc9f5a.chunk.css",
@@ -37,6 +37,6 @@
     "static/css/2.b1dc9f5a.chunk.css",
     "static/js/2.b80c349d.chunk.js",
     "static/css/main.916cf1cb.chunk.css",
-    "static/js/main.c79bcba9.chunk.js"
+    "static/js/main.bb15d5eb.chunk.js"
   ]
 }
