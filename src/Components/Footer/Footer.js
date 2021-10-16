@@ -129,10 +129,7 @@ const Footer = () => {
                       data-animate="fadeInUp"
                       data-delay=".5"
                     >
-                      <li>
-                        Cr. Cervera <br />
-                        Cervello, Barcelona
-                      </li>
+                      <li>Cervello, Barcelona</li>
                       <li>Spain</li>
                       <li>
                         <a href="#">info@lmn.network</a>
