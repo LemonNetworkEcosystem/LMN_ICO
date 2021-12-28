@@ -81,9 +81,9 @@ const Body = () => {
       <section id="team" style={{ backgroundColor: "#f3f3f3" }}>
         <Advisors />
       </section>
-      <section id="team" style={{ backgroundColor: "#f3f3f3" }}>
+      {/* <section id="team" style={{ backgroundColor: "#f3f3f3" }}>
         <Investors />
-      </section>
+      </section> */}
 
       <section className="section pb-0 bg-white" id="faqs">
         <Faqs />

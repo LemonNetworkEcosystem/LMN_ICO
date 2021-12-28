@@ -5,14 +5,14 @@ import teamMember1 from "../../../assets/images-main/team/eceo.jpg";
 import teamMember2 from "../../../assets/images-main/team/rcto.jpg";
 import teamMember3 from "../../../assets/images-main/team/cmo.jpg";
 
-import teamMember6 from "../../../assets/images-main/team/_rrss.png";
-import teamMember4 from "../../../assets/images-main/team/_camara.png";
-import teamMember5 from "../../../assets/images-main/team/_youtuber.png";
-import teamMember7 from "../../../assets/images-main/team/_writer.png";
-import teamMember8 from "../../../assets/images-main/team/_rrpp.png";
-import teamMember9 from "../../../assets/images-main/team/_expansion.png";
-import teamMember10 from "../../../assets/images-main/team/_academy.png";
-import teamMember11 from "../../../assets/images-main/team/_developer.png";
+import teamMember6 from "../../../assets/images-main/team/r_rrss.png";
+import teamMember4 from "../../../assets/images-main/team/c_camara.png";
+import teamMember5 from "../../../assets/images-main/team/y_youtuber.png";
+import teamMember7 from "../../../assets/images-main/team/w_writer.png";
+import teamMember8 from "../../../assets/images-main/team/r_rrpp.png";
+import teamMember9 from "../../../assets/images-main/team/e_expansion.png";
+import teamMember10 from "../../../assets/images-main/team/a_academy.png";
+import teamMember11 from "../../../assets/images-main/team/d_developer.png";
 
 const OurTeamCollaborators = () => {
   return (

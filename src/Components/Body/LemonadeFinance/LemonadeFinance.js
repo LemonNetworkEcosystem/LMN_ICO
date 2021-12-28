@@ -4,8 +4,8 @@ import logo from "../../../assets/images-main/lemon-logo.svg";
 import networkLogo from "../../../assets/images-main/lemon-network.png";
 import { color } from "d3-color";
 import { interpolateRgb } from "d3-interpolate";
-import glass from "../../../assets/images-main/glass.png";
 import "./LemonadeFinance.css";
+
 import { ToastContainer, toast } from "react-toastify";
 import LemonPopUp from "../../../assets/images-main/lemon-popup.png";
 import LemonadeFinanceModalExit from "../LemonadeFinance/LemonadeFinanceModal/LemonadeFinanceModalExit";
@@ -19,6 +19,9 @@ import LemonNetworkVault from "../../../abis/LemonNetworkVault.json";
 
 const LemonadeFinance = () => {
   const lemonAddress = "0xdBB49BE8562ca6E23B41B3BC7f76b00748EED557";
+
+  const glass =
+    "https://firebasestorage.googleapis.com/v0/b/lemon-network.appspot.com/o/Assets%2Fglass.png?alt=media";
   const [showModal, setShowModal] = useState(false);
   const [showModalBuy, setShowModalBuy] = useState(false);
   const [successShow, setSuccessShow] = useState(false);
