@@ -142,7 +142,7 @@ const HowItWorks = () => {
 
                   <p className="animate-up delay-6ms">
                     The climate change is an important consideration for our
-                    team. This is way we have choosen to deploy the project at a
+                    team. This is way we have chosen to deploy the project at a
                     chain where all the electricity that's used comes from
                     renewable energy sources.
                   </p>

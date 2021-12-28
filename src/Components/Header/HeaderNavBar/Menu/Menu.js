@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import Web3 from "web3";
+import Tooltip from "@mui/material/Tooltip";
 
 import ICO from "../../../../abis/ICO.json";
 //images
@@ -12,59 +13,62 @@ import EWT from "../../../../assets/images-main/EWT.png";
 import lmn_logo from "../../../../assets/images-main/LMN.png";
 // import lmn_logo from "../../../../assets/images-main/lmn.png";
 
+const {
+  setIntervalAsync,
+  clearIntervalAsync,
+} = require("set-interval-async/fixed");
+
 const Menu = ({ isOpen, setIsOpen, quantity, setQuantity }) => {
   const [Navclass, setNavclass] = useState("");
   const [LMN_Amount, setLMNAmount] = useState("");
-  const [connect, setConnected] = useState(false);
+  // const [connect, setConnected] = useState(false);
 
-  // const getBlockData = async () => {
-  //   window.ethereum.on("accountsChanged", function (accounts) {
-  //     window.location.reload();
-  //   });
-  //   if (typeof window.ethereum !== "undefined") {
-  //     const web3 = new Web3(window.ethereum);
-  //     try {
-  //       window.ethereum.enable().then(async function () {
-  //         // User has allowed account access to DApp...
-  //         const netId = await web3.eth.net.getId();
+  const getBlockData = async () => {
+    window.ethereum.on("accountsChanged", function (accounts) {
+      window.location.reload();
+    });
+    if (typeof window.ethereum !== "undefined") {
+      const web3 = new Web3(window.ethereum);
+      try {
+        window.ethereum.enable().then(async function () {
+          // User has allowed account access to DApp...
+          const netId = await web3.eth.net.getId();
 
-  //         console.log("ACCESS GRANTED");
-  //         setConnected(true);
-  //         const ICO_Contract = new web3.eth.Contract(
-  //           ICO.abi,
-  //           ICO.networks[netId].address
-  //         );
+          // setConnected(true);
+          const ICO_Contract = new web3.eth.Contract(
+            ICO.abi,
+            ICO.networks[netId].address
+          );
 
-  //         const accounts = await web3.eth.getAccounts();
-  //         console.log(accounts);
-  //         //load balance
+          const accounts = await web3.eth.getAccounts();
+          // console.log(accounts);
+          //load balance
 
-  //         const balance = await ICO_Contract.methods.getTokenCount().call();
+          const balance = await ICO_Contract.methods
+            .getTokenCount()
+            .call({ from: accounts[0] });
 
-  //         console.log(balance);
+          console.log(`LMN pdt withdraw: ${balance}`);
 
-  //         setLMNAmount(
-  //           web3.utils
-  //             .fromWei(balance)
-  //             .toString()
-  //             .replace(/\B(?=(\d{3})+(?!\d))/g, ",")
-  //         );
-  //         // this.setState({
-  //         //   account: accounts[0],
-  //         //   balance: web3.utils.fromWei(balance),
+          let number = parseFloat(web3.utils.fromWei(balance)).toFixed(4);
 
-  //         //   //* Progra Globals
-  //         //   web3: web3,
-  //         //   // netId: netId,
-  //         // });
-  //       });
-  //     } catch (e) {
-  //       // User has denied account access to DApp...
-  //     }
-  //   }
+          setLMNAmount(number);
+          // this.setState({
+          //   account: accounts[0],
+          //   balance: web3.utils.fromWei(balance),
 
-  //   //load contracts
-  // };
+          //   //* Progra Globals
+          //   web3: web3,
+          //   // netId: netId,
+          // });
+        });
+      } catch (e) {
+        // User has denied account access to DApp...
+      }
+    }
+
+    //load contracts
+  };
 
   const addEWC = () => {
     const params = [
@@ -119,48 +123,57 @@ const Menu = ({ isOpen, setIsOpen, quantity, setQuantity }) => {
     }
   };
 
-  // const doStuff = async () => {
-  //   window.ethereum.on("accountsChanged", function (accounts) {
-  //     window.location.reload();
-  //   });
-  //   if (typeof window.ethereum !== "undefined") {
-  //     const web3 = new Web3(window.ethereum);
-  //     try {
-  //       const netId = await web3.eth.net.getId();
+  const doStuff = async () => {
+    window.ethereum.on("accountsChanged", function (accounts) {
+      window.location.reload();
+    });
+    if (typeof window.ethereum !== "undefined") {
+      const web3 = new Web3(window.ethereum);
+      try {
+        const netId = await web3.eth.net.getId();
 
-  //       console.log("ACCESS GRANTED");
+        // console.log("ACCESS GRANTED");
 
-  //       const ICO_Contract = new web3.eth.Contract(
-  //         ICO.abi,
-  //         ICO.networks[netId].address
-  //       );
+        const ICO_Contract = new web3.eth.Contract(
+          ICO.abi,
+          ICO.networks[netId].address
+        );
 
-  //       const accounts = await web3.eth.getAccounts();
-  //       console.log(accounts);
-  //       //load balance
-  //       const balance = await ICO_Contract.methods.getTokenCount().call();
+        // const accounts = await web3.eth.getAccounts();
+        // console.log(accounts[0]);
+        //load balance
+        const balance = await ICO_Contract.methods.getTokenCount().call();
 
-  //       console.log(balance);
+        // console.log(balance);
+        let number = parseFloat(web3.utils.fromWei(balance)).toFixed(4);
+        setLMNAmount(number);
+        return 69;
+      } catch (e) {
+        console.log(e.toString());
+        return 1;
+      }
+    }
+  };
 
-  //       return web3.utils
-  //         .fromWei(balance)
-  //         .toString()
-  //         .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  //     } catch (e) {
-  //       console.log(e.toString());
-  //     }
-  //   }
-  // };
+  useEffect(async () => {
+    await getBlockData();
+  }, []);
 
-  // useEffect(async () => {
-  //   await getBlockData();
-  // }, []);
+  // setInterval(async () => {
+  //   setLMNAmount(await doStuff());
+  // }, 25000);
 
   // useEffect(() => {
-  //   setTimeout(async () => {
-  //     setLMNAmount(await doStuff());
-  //   }, 10);
-  // });
+  //   const time = setIntervalAsync(async () => {
+  //     const resp = await doStuff();
+  //     if (isNaN(resp)) {
+  //       delete time.interval;
+  //       await clearIntervalAsync(time);
+  //       console.log("stopped!");
+  //     }
+  //   }, 9000);
+  //   return async () => await clearIntervalAsync(time);
+  // }, []);
 
   useEffect(() => {
     if (isOpen) {
@@ -222,17 +235,9 @@ const Menu = ({ isOpen, setIsOpen, quantity, setQuantity }) => {
               className="btn btn-rg btn-round"
               style={{ border: "1px solid #0ab30a" }}
             >
-              {connect ? (
-                <span>
-                  <font color="green" size="1">
-                    Connect
-                  </font>
-                </span>
-              ) : (
-                <span>
-                  <font color="green">Connect</font>
-                </span>
-              )}
+              <span>
+                <font color="green">Connect</font>
+              </span>
             </a>
           </li>
           <li>
@@ -248,6 +253,28 @@ const Menu = ({ isOpen, setIsOpen, quantity, setQuantity }) => {
               </span>
             </a>
           </li>
+          <span>
+            <Tooltip
+              title="LMN Network Advice:  If you are not able to see your LMN try a 0.001 EWT transaction, then you will be able to see your LMN, be patient we are handling a lot of Txs."
+              placement="right"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+            </Tooltip>
+          </span>
         </ul>
       </nav>
       {isOpen && (

@@ -65,7 +65,7 @@ const RoadMap = () => {
                         NOV. 2021
                       </span>
                     </div>
-                    <p className="font-weight-bold">LMN ICO</p>
+                    <p>LEMON Network Conference</p>
                   </div>
                 </div>
                 <div className="roadmap roadmap-s3 roadmap-s3-1">
@@ -75,7 +75,7 @@ const RoadMap = () => {
                         DEC. 2021
                       </span>
                     </div>
-                    <p>LEMON Network Conference</p>
+                    <p className="font-weight-bold">Lemon Network Conference</p>
                   </div>
                 </div>
 
@@ -83,7 +83,7 @@ const RoadMap = () => {
                   <div className="roadmap-step roadmap-step-s3">
                     <div className="roadmap-head roadmap-head-s3">
                       <span className="roadmap-time roadmap-time-s3">
-                        JAN. 2022
+                        Q1. 2022
                       </span>
                     </div>
                     <p>
@@ -99,7 +99,7 @@ const RoadMap = () => {
                   <div className="roadmap-step roadmap-step-s3">
                     <div className="roadmap-head roadmap-head-s3">
                       <span className="roadmap-time roadmap-time-s3">
-                        FEB. 2022
+                        Q1. 2022
                       </span>
                     </div>
                     <p>
@@ -115,7 +115,7 @@ const RoadMap = () => {
                   <div className="roadmap-step roadmap-step-s3">
                     <div className="roadmap-head roadmap-head-s3">
                       <span className="roadmap-time roadmap-time-s3">
-                        MAR. 2022
+                        Q1. 2022
                       </span>
                     </div>
                     <p>
@@ -131,7 +131,7 @@ const RoadMap = () => {
                   <div className="roadmap-step roadmap-step-s3">
                     <div className="roadmap-head roadmap-head-s3">
                       <span className="roadmap-time roadmap-time-s3">
-                        APR. 2022
+                        Q1. 2022
                       </span>
                     </div>
                     <p>
@@ -147,7 +147,7 @@ const RoadMap = () => {
                   <div className="roadmap-step roadmap-step-s3">
                     <div className="roadmap-head roadmap-head-s3">
                       <span className="roadmap-time roadmap-time-s3">
-                        MAY. 2022
+                        Q2. 2022
                       </span>
                     </div>
                     <p>
@@ -163,7 +163,7 @@ const RoadMap = () => {
                   <div className="roadmap-step roadmap-step-s3">
                     <div className="roadmap-head roadmap-head-s3">
                       <span className="roadmap-time roadmap-time-s3">
-                        JUL. 2022
+                        Q2. 2022
                       </span>
                     </div>
                     <p>
@@ -179,7 +179,7 @@ const RoadMap = () => {
                   <div className="roadmap-step roadmap-step-s3">
                     <div className="roadmap-head roadmap-head-s3">
                       <span className="roadmap-time roadmap-time-s3">
-                        AGO. 2022
+                        Q2. 2022
                       </span>
                     </div>
                     <p>
@@ -199,7 +199,7 @@ const RoadMap = () => {
                   <div className="roadmap-step roadmap-step-s3">
                     <div className="roadmap-head roadmap-head-s3">
                       <span className="roadmap-time roadmap-time-s3">
-                        OCT. 2022
+                        Q3. 2022
                       </span>
                     </div>
                     <p>
@@ -215,7 +215,7 @@ const RoadMap = () => {
                   <div className="roadmap-step roadmap-step-s3">
                     <div className="roadmap-head roadmap-head-s3">
                       <span className="roadmap-time roadmap-time-s3">
-                        NOV. 2022
+                        Q3. 2022
                       </span>
                     </div>
                     <p>

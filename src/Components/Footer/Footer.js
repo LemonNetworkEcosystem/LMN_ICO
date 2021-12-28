@@ -3,6 +3,7 @@ import React from "react";
 //images
 import EWTlogo from "../../assets/images-main/EWT-footer.svg";
 import logo from "../../assets/images-main/logo-blanc.png";
+const { links } = require("../../meta/links.js");
 
 const Footer = () => {
   return (
@@ -48,7 +49,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="https://medium.com/@LemonNetwork" target="_blank">
+                  <a href="https://medium.com/@lmn_network" target="_blank">
                     <em className="icon fab fa-medium-m"></em>
                   </a>
                 </li>
@@ -114,9 +115,6 @@ const Footer = () => {
                       <li>
                         <a href="#faqs">Faqs</a>
                       </li>
-                      <li>
-                        <a>Join Us</a>
-                      </li>
                     </ul>
                   </div>
                 </div>
@@ -133,6 +131,12 @@ const Footer = () => {
                       <li>Spain</li>
                       <li>
                         <a href="#">info@lmn.network</a>
+                      </li>
+                      <li>
+                        <a href="https://t.me/lemonnetworken" target="_blank">
+                          <span> Join us</span>{" "}
+                          <em className="link-icon fa fa-paper-plane"></em>
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -157,7 +161,7 @@ const Footer = () => {
               <ul className="footer-links">
                 <li>
                   <a
-                    href="https://firebasestorage.googleapis.com/v0/b/lemon-network.appspot.com/o/ICO%2FLMN%20Whitepaper.pdf?alt=media"
+                    href={links.whitepaper}
                     className="link link-xs link-DARK"
                     target="_blank"
                     download
@@ -167,7 +171,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="https://firebasestorage.googleapis.com/v0/b/lemon-network.appspot.com/o/Legal%2FLMN%20Network%20Terms%20%26%20Co.pdf?alt=media"
+                    href={links.terms_conditions_link}
                     target="_blank"
                     download
                   >
@@ -175,11 +179,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="https://firebasestorage.googleapis.com/v0/b/lemon-network.appspot.com/o/Legal%2FLMN%20Network%20Privacy%20Policy.pdf?alt=media"
-                    target="_blank"
-                    download
-                  >
+                  <a href={links.privacy_policy_link} target="_blank" download>
                     LMN Privacy
                   </a>
                 </li>

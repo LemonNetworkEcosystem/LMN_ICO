@@ -1,0 +1,54 @@
+.logo-water-advisor {
+    position: absolute;
+    opacity: 80%;
+    transform: translateX(95px);
+    font-size: 200px;
+    font-family: 'Montserrat', sans-serif;
+    color: grey;
+}
+
+.gauge-text {
+    opacity: 0.5;
+}
+
+.glass-advisor {
+    position: absolute;
+    width: 275px;
+    transform: translateX(13px);
+    opacity: 60%;
+}
+
+.gauge-btn {
+    border: 2px solid #7fd705;
+    background-color: white;
+    font-weight: bold;
+    font-size: 26px;
+    color: #7fd705;
+    width: 100%;
+    margin-top: 40px;
+    width: 400px;
+    height: 50px;
+    border-radius: 50px;
+    transition: all ease 0.5s;
+}
+
+.gauge-btn-withdraw {
+    border: 2px solid grey;
+    background-color: white;
+    font-weight: bold;
+    font-size: 26px;
+    color: grey;
+    width: 100%;
+    margin-top: 20px;
+    width: 400px;
+    height: 50px;
+    border-radius: 50px;
+    pointer-events: none;
+    transition: all ease 0.5s;
+}
+
+@media only screen and (max-width: 1000px) {
+    .circle-container {
+        margin-left: 20%;
+    }
+}

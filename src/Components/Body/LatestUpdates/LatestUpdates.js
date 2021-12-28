@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import LemonPopUp from "../../../assets/images-main/lemon-popup.png";
-
+import links from "../../../meta/links";
 const LatestUpdates = () => {
   const [email, setEmail] = useState("");
   const [rawEmail, setRawEmail] = useState("");
@@ -119,27 +118,34 @@ const LatestUpdates = () => {
                 >
                   <font size="3">
                     <input className="mx-2" type="checkbox" />I accept the{" "}
-                    <a
-                      href="https://firebasestorage.googleapis.com/v0/b/lemon-network.appspot.com/o/Legal%2FLMN%20Network%20Terms%20%26%20Co.pdf?alt=media"
-                      target="_blank"
-                    >
+                    <a href={links.links.terms_conditions_link} target="_blank">
                       Terms & Conditions
                     </a>{" "}
                     &{" "}
-                    <a
-                      href="https://firebasestorage.googleapis.com/v0/b/lemon-network.appspot.com/o/Legal%2FLMN%20Network%20Privacy%20Policy.pdf?alt=media"
-                      target="_blank"
-                    >
+                    <a href={links.links.privacy_policy_link} target="_blank">
                       Privacy Policy
                     </a>
                   </font>
                 </p>
                 <br />
               </div>
-              <a href="https://t.me/lemon_network" target="_blank">
-                <em className="link-icon fa fa-paper-plane"></em>
-                <span>Join us on Telegram</span>
-              </a>
+              <div>
+                <a href="https://t.me/lemon_network" target="_blank">
+                  <em className="link-icon fa fa-paper-plane"></em>
+                  <span>
+                    Join us on Telegram <b>ES</b>
+                  </span>
+                </a>
+              </div>
+              <br></br>
+              <div>
+                <a href="https://t.me/lemonnetworken" target="_blank">
+                  <em className="link-icon fa fa-paper-plane"></em>
+                  <span>
+                    Join us on Telegram <b>EN</b>
+                  </span>
+                </a>
+              </div>
             </div>
           </div>
         </div>

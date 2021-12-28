@@ -70,7 +70,7 @@ const AboutUs = () => {
                 that will be recharged after certain time period. This
                 limitation will define how users spend their likes.{" "}
                 <strong>Don't panic!</strong> This does not mean that it is an
-                inflationary ecosystem LMN has a total supply of 7.5 M. So you
+                inflationary ecosystem LMN has a total supply of 50M. So you
                 will not be buying likes in this ICO, you are buying the most
                 valued token of the whole ecosystem.
               </p>

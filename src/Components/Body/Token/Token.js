@@ -30,7 +30,7 @@ const Token = () => {
             >
               <h6 className="title title-s6 title-xs-s2">Start</h6>
               <p>
-                <i>Nov 15, 2021 (00:00:00 UTC)</i>
+                <i>Nov 15 2021 (00:00:00 GMT+0100)</i>
               </p>
             </div>
           </div>
@@ -68,7 +68,7 @@ const Token = () => {
             >
               <h6 className="title title-s6 title-xs-s2">End</h6>
               <p>
-                <i>Dec 4, 2021 (23:59:00 UTC)</i>
+                <i>Dec 04 2021 (23:59:59 GMT+0100)</i>
               </p>
             </div>
           </div>
@@ -95,7 +95,9 @@ const Token = () => {
               <h6 className="title title-s6 title-xs-s2">
                 Minimal transaction amount
               </h6>
-              <p>No minimal amount to invest</p>
+              <p>
+                <i>0.001 EWT</i> (0.008 $)
+              </p>
             </div>
           </div>
         </div>
@@ -113,7 +115,7 @@ const Token = () => {
                 <ChartOne />
               </div>
               <p>
-                <b>LMN</b> ICO phases allocations
+                <b>LMN</b> ICO Allocations
               </p>
             </div>
           </div>

@@ -1,0 +1,7 @@
+.img-anim {
+  transition: ease 0.5s;
+}
+
+.img-anim:hover {
+  transform: translateY(-20px);
+}
